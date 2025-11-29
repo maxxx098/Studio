@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; // framer-motion for animations
 
 const About: React.FC = () => {
   return (
