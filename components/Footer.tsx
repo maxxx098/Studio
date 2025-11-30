@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram, Twitter, Linkedin, ArrowUpRight, HelpCircle, CheckCircle2, XCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; // framer-motion for animations
 import { ASSETS } from '../assets';
 
 const Footer: React.FC = () => {

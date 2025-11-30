@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'; // framer-motion for animations
 const About: React.FC = () => {
   return (
     <section className="bg-[#0a0a0a] pt-32 pb-20 relative z-10 overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-12"> 
         
         {/* Header */}
         <div className="mb-24 relative">
