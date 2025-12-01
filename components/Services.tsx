@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ASSETS } from '@/assets';
 
 const Services: React.FC = () => {
-     const [activeService, setActiveService] = useState(SERVICES[0]);
+     const [activeService, setActiveService] = useState(SERVICES[0]); // make service component active
   return (
     <section className="bg-[#0a0a0a] py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 relative z-10">
