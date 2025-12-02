@@ -144,7 +144,7 @@ const Services: React.FC = () => {
         {/* Original Services List Below */}
         <div className="mt-48">
             <h2 className="text-[8vw] leading-[0.8] font-black uppercase tracking-tighter text-white mb-12">
-               Our <br /> Services
+               Our <br /> Services 
                <span className="block w-32 h-4 text-[#FFB800]">
                   <svg viewBox="0 0 100 10" fill="none" stroke="currentColor" strokeWidth="3">
                       <path d="M0 5 Q 10 0, 20 5 T 40 5 T 60 5 T 80 5 T 100 5" />
