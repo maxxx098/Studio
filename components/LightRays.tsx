@@ -13,7 +13,7 @@ export type RaysOrigin =
 
 interface LightRaysProps {
   raysOrigin?: RaysOrigin;
-  raysColor?: string;
+  raysColor?: string; // rays coolor in hex format
   raysSpeed?: number;
   lightSpread?: number;
   rayLength?: number;
