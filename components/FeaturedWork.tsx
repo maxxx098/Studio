@@ -1,11 +1,12 @@
-import React from 'react';
+import { useRef } from 'react';
 import { PROJECTS } from '../constants';
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const FeaturedWork: React.FC = () => {
+  const worksSectionRef = useRef<HTMLDivElement>(null);
   return (
-    <section className="bg-[#0a0a0a] py-32">
+    <section id="works" ref={worksSectionRef} className="bg-[#0a0a0a] py-32">
       <div className="container mx-auto px-6 md:px-12">
         
         <div className="flex flex-col md:flex-row justify-between items-end mb-24">
