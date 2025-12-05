@@ -2,12 +2,12 @@ import { Project, Service, TeamMember, FaqItem, Testimonial } from './types';
 import { ASSETS } from './assets';
 
 export const PROJECTS: Project[] = [
-  { id: 1, title: 'Fargo - SaaS', category: 'Web Design', imageUrl: ASSETS.PROJECTS[0] },
-  { id: 2, title: 'Remix Supply', category: 'Branding', imageUrl: ASSETS.PROJECTS[1] },
-  { id: 3, title: 'Bravo Agency', category: 'Mobile App', imageUrl: ASSETS.PROJECTS[2] },
-  { id: 4, title: 'Haze Portfolio', category: 'Development', imageUrl: ASSETS.PROJECTS[3] },
-  { id: 5, title: 'Luna E-commerce', category: 'Web Design', imageUrl: ASSETS.PROJECTS[4] },
-  { id: 6, title: 'Nova Dashboard', category: 'UI/UX', imageUrl: ASSETS.PROJECTS[5] },
+  { id: 1, title: 'BAF Hospitality', category: 'Web Design', imageUrl: ASSETS.PROJECTS[0], slug: 'fargo-saas' },
+  { id: 2, title: 'Skitbit', category: 'Branding', imageUrl: ASSETS.PROJECTS[1], slug: 'remix-supply' },
+  { id: 3, title: 'Care Pulse', category: 'Web Design / Development', imageUrl: ASSETS.PROJECTS[2], slug: 'bravo-agency' },
+  { id: 4, title: 'Clientsync', category: 'Task Management', imageUrl: ASSETS.PROJECTS[3], slug: 'haze-portfolio' },
+  { id: 5, title: 'Luminous', category: 'Web Design', imageUrl: ASSETS.PROJECTS[4], slug: 'luna-ecommerce' },
+  { id: 6, title: 'Oasis', category: 'Hotel Management', imageUrl: ASSETS.PROJECTS[5], slug: 'nova-dashboard' },
 ];
 
 export const SERVICES: Service[] = [

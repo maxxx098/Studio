@@ -1,8 +1,23 @@
 export interface Project {
   id: number;
   title: string;
+  description?: string;
   category: string;
   imageUrl: string;
+  slug?: string;
+}
+
+export interface DetailedProject extends Project {
+  name: string;
+  description: string;
+  duration: string;
+  scope: string[];
+  results: string[];
+  gallery: string[];
+  client?: string;
+  year?: string;
+  challenge?: string;
+  solution?: string;
   
 }
 

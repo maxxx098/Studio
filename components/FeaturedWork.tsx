@@ -1,12 +1,14 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { PROJECTS } from '../constants';
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const FeaturedWork: React.FC = () => {
   const worksSectionRef = useRef<HTMLDivElement>(null);
+  
   return (
-    <section id="works" ref={worksSectionRef} className="bg-[#0a0a0a] py-32">
+    <section id="works" ref={worksSectionRef} className="bg-[#0a0a0a] py-28">
       <div className="container mx-auto px-6 md:px-12">
         
         <div className="flex flex-col md:flex-row justify-between items-end mb-24">
@@ -15,9 +17,9 @@ const FeaturedWork: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="max-w-3xl"
+            className="max-w-5xl"
           >
-             <h2 className="text-[8vw] leading-[0.8] font-black uppercase tracking-tighter mb-4">
+             <h2 className="text-[8vw] leading-[0.8] font-black uppercase tracking-tight mb-4">
                Featured Work
              </h2>
              <div className="w-48 h-4 text-[#FFB800] mb-8">
@@ -50,38 +52,44 @@ const FeaturedWork: React.FC = () => {
           }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
-          {PROJECTS.map((project) => (
+        {PROJECTS.map((project) => (
             <motion.div 
               key={project.id} 
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
               }}
-              className="group cursor-pointer relative"
             >
-              <div className="relative overflow-hidden aspect-[4/3] border border-white/10 bg-neutral-900">
-                <div className="absolute top-4 left-4 z-20 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800]">{project.category}</span>
+              <Link 
+                to={`/case-study/${project.slug}`}
+                className="group cursor-pointer relative duration-300"
+              >
+                <div className="relative overflow-hidden aspect-[4/4] rounded-2xl">
+                  <img 
+                    src={project.imageUrl} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60"></div>
                 </div>
                 
-                <img 
-                  src={project.imageUrl} 
-                  alt={project.title}
-                  className="w-full h-full object-cover "
-                />
-                                
-                  <div className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end bg-gradient-to-t from-black/80 to-transparent">
-                    <h3 
-                        className="text-3xl font-black uppercase tracking-tighter text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-4 group-hover:translate-y-0" 
-                        title={project.title}
-                    >
-                        {project.title}
+                <div className="py-6">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-2xl font-black uppercase tracking-tight text-white group-hover:text-[#FFB800] transition-colors duration-300">
+                      {project.title}
                     </h3>
-                    <div className="w-10 h-10 bg-[#FFB800] rounded-full flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-4 group-hover:translate-y-0">
-                        <ArrowUpRight size={20} />
+                    <div className="w-8 h-8 rounded-full border-2 border-white/20 flex items-center justify-center text-white group-hover:border-[#FFB800] group-hover:text-[#FFB800] group-hover:rotate-45 transition-all duration-300">
+                      <ArrowUpRight size={16} strokeWidth={2.5} />
                     </div>
+                  </div>
+                  
+                  <p className="text-neutral-400 text-sm leading-relaxed">
+                    {project.description || `Explore our ${project.category.toLowerCase()} work`}
+                  </p>
+                  
                 </div>
-              </div>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
