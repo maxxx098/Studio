@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ASSETS } from '../assets';
 import { CheckCircle2 } from 'lucide-react';
+import { ReactTyped } from 'react-typed';
 
 const About: React.FC = () => {
   return (
@@ -24,12 +25,16 @@ const About: React.FC = () => {
                initial={{ opacity: 0, y: 30 }}
                animate={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.8, delay: 0.1 }}
-               className="text-[6vw] max-w-7xl md:text-[5vw] leading-[0.9] uppercase tracking-swiss-tight mb-8 font-medium"
+               className="text-[6vw] max-w-7xl md:text-[5vw] leading-[1] uppercase tracking-swiss-tight mb-8 font-medium"
              >
-               Built on creativity, collaboration, and top <br className="hidden md:block" />
-               excellence, <span className="text-[#FFC247]">SYNC</span> is a dynamic team of industry <br className="hidden md:block" />
-               experts committed to achieving exceptional <br className="hidden md:block" />
-               <span className="stroke-text-white opacity-50 ml-2">great results...</span>
+              <ReactTyped
+                strings={[
+                  'We are Epic Creative Studio, a cutting-edge design agency specializing in crafting immersive digital experiences that captivate and inspire.',
+                ]}
+                typeSpeed={50}
+                backSpeed={30}
+                loop={false}
+              />
              </motion.h1></div>
              
              {/* Middle CTA Button again if needed, or just spacer */}
