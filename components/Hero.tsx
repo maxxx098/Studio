@@ -3,6 +3,7 @@ import LightRays from './LightRays';
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 import { PROJECTS } from '../constants';
+import { ASSETS } from '../assets';
 
 const Hero: React.FC = () => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
@@ -153,6 +154,10 @@ const Hero: React.FC = () => {
             </motion.div>
           </button>
         </div>
+      </div>
+        {/* SECTION 2: Image LAYOUT */}
+      <div>
+       <img src={ASSETS.HERO.BG_TEXTURE} alt="Background Texture" />
       </div>
     </div>
   );

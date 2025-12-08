@@ -18,7 +18,8 @@ export const ASSETS = {
     // Overlay noise texture
     NOISE_OVERLAY: "https://grainy-gradients.vercel.app/noise.svg",
     // Background texture (optional)
-    BG_TEXTURE: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+    BG_TEXTURE: "/assets/projects/robot.jpg"
+
   },
   ABOUT: {
     // Sticker avatar on the "We Are Epic" text
