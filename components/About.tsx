@@ -75,7 +75,7 @@ const About: React.FC = () => {
                  transition={{ duration: 0.8, delay: 0.2 }}
                  className="text-neutral-400 text-xs font-bold uppercase leading-relaxed tracking-wide text-justify"
                >
-                 Our branding design services are tailored to capture the essence of your business, creating a cohesive and memorable identity. Reflects your unique values and resonates with your target audience from competitors.
+                 Our branding design services are tailored to capture the essence of your businesses, creating a cohesive and memorable identity. Reflects your unique values and resonates with your target audience from competitors.
                </motion.p>
             </div>
 
