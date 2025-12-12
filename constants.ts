@@ -1,6 +1,8 @@
 import { Project, Service, TeamMember, FaqItem, Testimonial } from './types';
 import { ASSETS } from './assets';
 
+export const BG_TEXTURE = ASSETS.HERO.BG_TEXTURE;
+
 export const PROJECTS: Project[] = [
   { id: 1, title: 'BAF Hospitality', category: 'Web Design', imageUrl: ASSETS.PROJECTS[0], slug: 'fargo-saas' },
   { id: 2, title: 'Skitbit', category: 'Branding', imageUrl: ASSETS.PROJECTS[1], slug: 'remix-supply' },

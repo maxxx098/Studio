@@ -18,7 +18,7 @@ export const ASSETS = {
     // Overlay noise texture
     NOISE_OVERLAY: "https://grainy-gradients.vercel.app/noise.svg",
     // Background texture (optional)
-    BG_TEXTURE: "/assets/projects/robot.jpg"
+    BG_TEXTURE: "/assets/projects/HeroImage.png"
 
   },
   ABOUT: {
