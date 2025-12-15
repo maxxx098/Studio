@@ -10,7 +10,7 @@ const Faq: React.FC = () => {
     <section className="py-24 px-10">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4">
-           <motion.h2 
+           <motion.h2
              initial={{ opacity: 0, y: 30 }}
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true }}
