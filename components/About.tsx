@@ -5,7 +5,7 @@ import { ASSETS } from '../assets';
 
 const About: React.FC = () => {
   return (
-    <section className="bg-[#0a0a0a] text-white py-32 border-b border-white/10 relative overflow-hidden">
+    <section className="relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
         
         {/* Strict Grid Layout */}
