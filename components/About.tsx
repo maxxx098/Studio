@@ -14,7 +14,7 @@ const About: React.FC = () => {
             {/* 1. Top Row Left: Label (Cols 1-3) */}
             <div className="md:col-span-3">
                <motion.span 
-                 initial={{ opacity: 0, x: -20 }}
+                 initial={{ opacity: 0, x: -20 }} // Initial state: slightly left and transparent
                  whileInView={{ opacity: 1, x: 0 }}
                  viewport={{ once: true }}
                  className="bg-white text-black px-3 py-1.5 text-[10px] font-bold uppercase tracking-swiss-wide inline-block mb-4 md:mb-0"
