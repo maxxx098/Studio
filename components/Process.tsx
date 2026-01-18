@@ -2,7 +2,7 @@ import React from 'react';
 import { SERVICES } from '../constants';
 import { ArrowRight, Target, RefreshCw, CheckCircle2, Circle } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { ASSETS } from '../assets';
+import { ASSETS } from '../assets'; // Assuming ASSETS is an object that contains paths to images
 
 const Services: React.FC = () => {
   return (
