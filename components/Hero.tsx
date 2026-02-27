@@ -156,9 +156,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
         {/* SECTION 2: Image LAYOUT */}
-      <div>
-       <img src={ASSETS.HERO.BG_TEXTURE} alt="Background Texture" />
-      </div>
+
     </div>
   );
 };

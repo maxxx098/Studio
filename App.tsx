@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
     <div className="bg-neutral-950 text-white min-h-screen">
       <Navbar />
       <Hero />
-      <About />
+
       <Process />
       <FeaturedWork />
       <Services />

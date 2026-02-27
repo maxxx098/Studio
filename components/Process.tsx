@@ -6,46 +6,10 @@ import { ASSETS } from '../assets'; // Assuming ASSETS is an object that contain
 
 const Services: React.FC = () => {
   return (
-    <section className="bg-[#0a0a0a] relative overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12 relative z-10">
+    <section className="bg-[#0a0a0a] ">
+      <div className=" mx-auto px-6 md:px-12 relative z-10">
         {/* Centered Header */}
-        <div className="text-center mt-10 mb-20 relative">
-           <motion.h2 
-             initial={{ opacity: 0, y: 50 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-             className="text-[6vw] leading-[0.85] uppercase tracking-swiss-tight text-white inline-block relative"
-           >
-             Welcome to the Work Process
-             {/* Sticker */}
-             <div className="absolute -top-6 -right-12 rotate-12">
-               <motion.div 
-                 initial={{ scale: 0 }}
-                 whileInView={{ scale: 1 }}
-                 viewport={{ once: true }}
-                 transition={{ delay: 0.5, type: "spring" }}
-                 className="w-12 h-12 md:w-16 md:h-16 bg-[#FFC247] rounded-full border-2 border-black flex items-center justify-center overflow-hidden"
-               >
-                  <img src={ASSETS.SERVICES.PROCESS_STICKER} alt="Sticker" className="w-full h-full object-cover" />
-               </motion.div>
-             </div>
-           </motion.h2>
-           
-           <motion.div 
-             initial={{ opacity: 0 }}
-             whileInView={{ opacity: 1 }}
-             viewport={{ once: true }}
-             transition={{ delay: 0.3, duration: 0.8 }}
-             className="mt-12 text-[15px] md:text-xs font-bold uppercase tracking-swiss-wide text-neutral-400 max-w-3xl mx-auto leading-relaxed"
-           >
-             <p>
-               <span className="text-white">Our process</span> <span className="text-white">at Epic</span> <span className="text-white">Combines Creativity</span> <span className="text-white">with strategy,</span> <span className="text-white">starting with</span> <span className="text-white">understanding</span> <br className="hidden md:block"/>
-               <span className="text-white">your goals</span> <span className="text-white">and moving</span> <span className="text-white">through careful</span> <span className="text-white">planning</span> <br className="hidden md:block"/>
-               <span className="text-white">and innovative</span> <span className="text-white">design.</span>
-             </p>
-           </motion.div>
-        </div>
+    
         {/* 3 CARDS GRID */}
         <motion.div 
           initial="hidden"
@@ -54,7 +18,7 @@ const Services: React.FC = () => {
           variants={{
              visible: { transition: { staggerChildren: 0.2 } }
           }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 relative mb-48"
+       className="grid grid-cols-1 md:grid-cols-3 gap-8 relative mb-20"
         >
            {/* CARD 1: DISCOVERY & ANALYSIS */}
            <motion.div 
