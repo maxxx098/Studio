@@ -48,8 +48,8 @@ const Navbar: React.FC<NavbarProps> = ({ className = '', size = 'lg' }) => {
         mt-3
         ${currentSize.badge}
         ${currentSize.badgeRounded}
-        bg-yellow-500 
-        text-black
+        bg-red-500 
+        text-white
         font-black 
         tracking-wider
         uppercase 

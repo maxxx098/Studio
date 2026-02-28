@@ -12,11 +12,11 @@ export const createSlug = (title: string): string => {
 export const DETAILED_PROJECTS: DetailedProject[] = [
   {
     id: 1,
-    title: 'Fargo - SaaS',
+    title: 'BAF HOSPITALITY GROUP',
     slug: 'fargo-saas',
-    name: 'Fargo SaaS Platform',
+    name: 'BAF Hospitality Group',
     category: 'Web Design',
-    imageUrl: 'https://picsum.photos/seed/project1/1200/800',
+    imageUrl:   '/assets/projects/project_1.png',
     description: 'A comprehensive SaaS platform designed to streamline business operations with intuitive interfaces and powerful automation tools.',
     duration: '6 months',
     client: 'Fargo Inc.',
@@ -31,19 +31,16 @@ export const DETAILED_PROJECTS: DetailedProject[] = [
       '4.8/5 user satisfaction rating'
     ],
     gallery: [
-      'https://picsum.photos/seed/fargo1/800/600',
-      'https://picsum.photos/seed/fargo2/800/600',
-      'https://picsum.photos/seed/fargo3/800/600',
-      'https://picsum.photos/seed/fargo4/800/600'
+      '/assets/projects/BAF.png',
     ]
   },
   {
     id: 2,
-    title: 'Remix Supply',
+    title: 'Skitbit',
     slug: 'remix-supply',
-    name: 'Remix Supply Chain',
+    name: 'Skitbit',
     category: 'Branding',
-    imageUrl: 'https://picsum.photos/seed/project2/1200/800',
+    imageUrl: '/assets/projects/project_2.png',
     description: 'Complete brand overhaul for a logistics company, including logo design, brand guidelines, and marketing materials.',
     duration: '4 months',
     client: 'Remix Logistics',
@@ -58,18 +55,16 @@ export const DETAILED_PROJECTS: DetailedProject[] = [
       'Successfully launched in 15 new markets'
     ],
     gallery: [
-      'https://picsum.photos/seed/remix1/800/600',
-      'https://picsum.photos/seed/remix2/800/600',
-      'https://picsum.photos/seed/remix3/800/600'
+         '/assets/projects/Skitbit.png',
     ]
   },
   {
     id: 3,
-    title: 'Bravo Agency',
+    title: 'Care Pulse',
     slug: 'bravo-agency',
-    name: 'Bravo Creative App',
+    name: 'Care Pulse Application',
     category: 'Mobile App',
-    imageUrl: 'https://picsum.photos/seed/project3/1200/800',
+    imageUrl: '/assets/projects/project_3.png',
     description: 'Native mobile application for a creative agency to showcase their portfolio and connect with clients on the go.',
     duration: '5 months',
     client: 'Bravo Creative',
@@ -84,18 +79,17 @@ export const DETAILED_PROJECTS: DetailedProject[] = [
       'Featured by Apple in "Apps We Love"'
     ],
     gallery: [
-      'https://picsum.photos/seed/bravo1/800/600',
-      'https://picsum.photos/seed/bravo2/800/600',
-      'https://picsum.photos/seed/bravo3/800/600'
+      '/assets/projects/Carepulse1.png',
+      '/assets/projects/Carepulse2.png',
     ]
   },
   {
     id: 4,
-    title: 'Haze Portfolio',
+    title: 'Clientsync Management',
     slug: 'haze-portfolio',
-    name: 'Haze Designer Portfolio',
+    name: 'Clientsync Management Tool',
     category: 'Development',
-    imageUrl: 'https://picsum.photos/seed/project4/1200/800',
+    imageUrl: '/assets/projects/project_4.png',
     description: 'A stunning portfolio website with advanced animations and interactions to showcase a designer\'s work.',
     duration: '3 months',
     client: 'Haze Studios',
@@ -110,18 +104,18 @@ export const DETAILED_PROJECTS: DetailedProject[] = [
       '15K organic visits in first month'
     ],
     gallery: [
-      'https://picsum.photos/seed/haze1/800/600',
-      'https://picsum.photos/seed/haze2/800/600',
-      'https://picsum.photos/seed/haze3/800/600'
+      '/assets/projects/Clientsync1.png',
+      '/assets/projects/Clientsync2.png',
     ]
   },
+
   {
     id: 5,
-    title: 'Luna E-commerce',
+    title: 'Luminous',
     slug: 'luna-ecommerce',
-    name: 'Luna Fashion Platform',
+    name: 'Luminous Skin Care E-commerce',
     category: 'Web Design',
-    imageUrl: 'https://picsum.photos/seed/project5/1200/800',
+    imageUrl: '/assets/projects/project_5.png',
     description: 'Modern e-commerce platform for a fashion brand with seamless shopping experience and beautiful product presentations.',
     duration: '7 months',
     client: 'Luna Fashion',
@@ -136,18 +130,16 @@ export const DETAILED_PROJECTS: DetailedProject[] = [
       '40% repeat customer rate'
     ],
     gallery: [
-      'https://picsum.photos/seed/luna1/800/600',
-      'https://picsum.photos/seed/luna2/800/600',
-      'https://picsum.photos/seed/luna3/800/600'
+      '/assets/projects/Luminous.png',
     ]
   },
   {
     id: 6,
-    title: 'Nova Dashboard',
+    title: 'Oasis Hotel Management',
     slug: 'nova-dashboard',
-    name: 'Nova Analytics Dashboard',
+    name: 'Oasis Hotel Management',
     category: 'UI/UX',
-    imageUrl: 'https://picsum.photos/seed/project6/1200/800',
+    imageUrl: '/assets/projects/project_6.png',
     description: 'Comprehensive analytics dashboard with data visualization and real-time monitoring capabilities.',
     duration: '5 months',
     client: 'Nova Analytics',
@@ -162,9 +154,6 @@ export const DETAILED_PROJECTS: DetailedProject[] = [
       'Won "Best Analytics Tool 2024"'
     ],
     gallery: [
-      'https://picsum.photos/seed/nova1/800/600',
-      'https://picsum.photos/seed/nova2/800/600',
-      'https://picsum.photos/seed/nova3/800/600'
     ]
   }
 ];

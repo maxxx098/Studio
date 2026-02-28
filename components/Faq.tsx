@@ -8,7 +8,7 @@ const Faq: React.FC = () => {
 
   return (
     <section className="py-24 px-10">
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className="mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4">
            <motion.h2
              initial={{ opacity: 0, y: 30 }}
@@ -40,7 +40,7 @@ const Faq: React.FC = () => {
             >
               <button 
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                className="w-full py-8 flex justify-between items-center text-left hover:text-[#FFB800] transition-colors"
+                className="w-full py-8 flex justify-between items-center text-left hover:text-[#ff0000] transition-colors"
               >
                 <span className="text-lg md:text-xl font-bold uppercase tracking-wide pr-8">{item.question}</span>
                 {openIndex === idx ? <Minus size={20} /> : <Plus size={20} />}

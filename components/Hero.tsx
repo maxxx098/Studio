@@ -115,7 +115,7 @@ const Hero: React.FC = () => {
             <div className="mt-12 max-w-3xl text-center relative">
               <p className="text-xs md:text-sm font-bold uppercase tracking-widest text-neutral-300 leading-relaxed">
                 High-Performance & Production-Ready <span className="mx-2">—</span> Applications That Scale, Partnering <br className="hidden md:block" />
-                With <span className="text-white decoration-[#FFB800] underline decoration-2 underline-offset-4">Bold Entrepreneurs</span> & Tech Leaders To Innovate.
+                With <span className="text-white decoration-[#ff0008] underline decoration-2 underline-offset-4">Bold Entrepreneurs</span> & Tech Leaders To Innovate.
               </p>
             </div>
 
@@ -131,7 +131,7 @@ const Hero: React.FC = () => {
           <button onClick={scrollToWorks} className="absolute bottom-8 right-6 md:right-12 z-30">
             <motion.div 
               whileHover={{ scale: 1.05 }}
-              className="bg-[#FFB800] text-black rounded-xl flex items-center gap-2 pr-4 p-3 cursor-pointer"
+              className="bg-[#ff0000] text-white rounded-xl flex items-center gap-2 pr-4 p-3 cursor-pointer"
             >
               <div className="text-[22px] font-semibold leading-none flex flex-col justify-center items-center uppercase tracking-tighter">
                 <span className='tracking-wide'>Latest</span>

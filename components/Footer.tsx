@@ -19,14 +19,14 @@ const Footer: React.FC = () => {
              whileInView={{ y: 0 }}
              viewport={{ once: true }}
              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-             className="text-[18vw] leading-[0.75] font-black uppercase tracking-tighter text-[#FFB800] mix-blend-difference select-none"
+             className="text-[18vw] leading-[0.75] font-black uppercase tracking-tighter text-[#ff0000] mix-blend-difference select-none"
            >
               Get In Touch<span className="text-white">.</span>
            </motion.h1>
         </div>
 
         {/* Bottom Bar */}
-        <div className="bg-[#FFB800] text-black py-12 px-6 -mx-6 md:-mx-12 mt-12">
+        <div className="bg-[#ff0000] text-black py-12 px-6 -mx-6 md:-mx-12 mt-12">
            <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
               <div className="md:col-span-2">
                  <p className="text-[10px] font-mono font-bold uppercase max-w-xs leading-relaxed opacity-80">
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
                  </p>
                  <div className="flex gap-4 mt-8">
                     {[Instagram, Twitter, Linkedin].map((Icon, i) => (
-                       <div key={i} className="w-8 h-8 border border-black rounded-full flex items-center justify-center hover:bg-black hover:text-[#FFB800] transition-colors cursor-pointer">
+                       <div key={i} className="w-8 h-8 border border-black rounded-full flex items-center justify-center hover:bg-black hover:text-[#ff0000] transition-colors cursor-pointer">
                           <Icon size={14} />
                        </div>
                     ))}
@@ -43,18 +43,18 @@ const Footer: React.FC = () => {
               
               <div>
                  <h4 className="font-black uppercase text-xs tracking-widest mb-4">Address</h4>
-                 <p className="font-bold text-xs uppercase">H.Q. P.O. LX 93 Los Angeles, CA 784</p>
+                 <p className="font-bold text-xs uppercase">MNL, Philippines</p>
               </div>
               
               <div>
                  <h4 className="font-black uppercase text-xs tracking-widest mb-4">Contact</h4>
-                 <p className="font-bold text-xs uppercase mb-1">(830) 966-6111</p>
-                 <p className="font-bold text-xs uppercase">info@epicstudio.com</p>
+                 <p className="font-bold text-xs uppercase mb-1">(+9) 661-344-171</p>
+                 <p className="font-bold text-xs uppercase">symonfalcatan08@gmail.com</p>
               </div>
            </div>
            
            <div className="flex justify-between items-center mt-12 pt-8 border-t border-black/10 text-[10px] font-black uppercase tracking-widest">
-              <p>© Mandro Designs 2024</p>
+              <p>© symvibestudio 2026</p>
               <button className="hover:underline">Go Back To Top</button>
            </div>
         </div>

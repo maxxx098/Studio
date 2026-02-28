@@ -23,7 +23,7 @@ const Services: React.FC = () => {
            {/* CARD 1: DISCOVERY & ANALYSIS */}
            <motion.div 
              variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}
-             className="bg-[#0f0f0f] border border-white/10 rounded-3xl p-8 flex flex-col h-full hover:border-[#FFC247]/30 transition-colors group"
+             className="bg-[#0f0f0f] border border-white/10 rounded-3xl p-8 flex flex-col h-full hover:border-[#ff4747]/30 transition-colors group"
            >
               {/* Visual Container */}
               <div className="bg-[#1a1a1a] rounded-xl border border-white/5 h-48 mb-8 relative overflow-hidden flex flex-col">
@@ -38,10 +38,10 @@ const Services: React.FC = () => {
                       {/* Left: Charts */}
                       <div className="flex-1 flex flex-col gap-3">
                           <div className="h-16 bg-[#222] rounded-lg p-2 flex items-end gap-1 justify-around">
-                              <motion.div className="w-2 bg-[#FFC247]/20 rounded-t-sm" animate={{ height: ["40%", "70%", "40%"] }} transition={{ duration: 2, repeat: Infinity }}></motion.div>
-                              <motion.div className="w-2 bg-[#FFC247]/40 rounded-t-sm" animate={{ height: ["60%", "30%", "60%"] }} transition={{ duration: 2.5, repeat: Infinity }}></motion.div>
-                              <motion.div className="w-2 bg-[#FFC247] rounded-t-sm" animate={{ height: ["30%", "80%", "30%"] }} transition={{ duration: 3, repeat: Infinity }}></motion.div>
-                              <div className="w-2 bg-[#FFC247]/10 rounded-t-sm h-full"></div>
+                              <motion.div className="w-2 bg-[#ff4747]/20 rounded-t-sm" animate={{ height: ["40%", "70%", "40%"] }} transition={{ duration: 2, repeat: Infinity }}></motion.div>
+                              <motion.div className="w-2 bg-[#ff4747]/40 rounded-t-sm" animate={{ height: ["60%", "30%", "60%"] }} transition={{ duration: 2.5, repeat: Infinity }}></motion.div>
+                              <motion.div className="w-2 bg-[#ff4747] rounded-t-sm" animate={{ height: ["30%", "80%", "30%"] }} transition={{ duration: 3, repeat: Infinity }}></motion.div>
+                              <div className="w-2 bg-[#ff4747]/10 rounded-t-sm h-full"></div>
                           </div>
                           <div className="flex-1 bg-[#222] rounded-lg p-2 flex flex-col gap-2">
                               <div className="w-full h-1.5 bg-white/10 rounded-full"></div>
@@ -52,8 +52,8 @@ const Services: React.FC = () => {
                       {/* Right: Target */}
                       <div className="flex-1 bg-[#222] rounded-lg flex items-center justify-center relative">
                           <Target size={48} className="text-[#333]" />
-                          <Target size={48} className="text-[#FFC247] absolute opacity-50 blur-[20px]" />
-                          <Target size={48} className="text-[#FFC247] absolute" />
+                          <Target size={48} className="text-[#ff4747] absolute opacity-50 blur-[20px]" />
+                          <Target size={48} className="text-[#ff4747] absolute" />
                       </div>
                   </div>
               </div>
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
            {/* CARD 2: DEVELOPMENT & TEST */}
            <motion.div 
              variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}
-             className="bg-[#0f0f0f] border border-white/10 rounded-3xl p-8 flex flex-col h-full hover:border-[#FFC247]/30 transition-colors group"
+             className="bg-[#0f0f0f] border border-white/10 rounded-3xl p-8 flex flex-col h-full hover:border-[#ff4747]/30 transition-colors group"
            >
               {/* Visual Container */}
               <div className="bg-[#1a1a1a] rounded-xl border border-white/5 h-48 mb-8 relative overflow-hidden flex flex-col">
@@ -98,7 +98,7 @@ const Services: React.FC = () => {
                           <motion.span 
                             animate={{ opacity: [0, 1, 0] }}
                             transition={{ duration: 0.8, repeat: Infinity }}
-                            className="w-1.5 h-3 bg-[#FFC247] inline-block align-middle"
+                            className="w-1.5 h-3 bg-[#ff4747] inline-block align-middle"
                           />
                       </div>
                   </div>
@@ -113,7 +113,7 @@ const Services: React.FC = () => {
            {/* CARD 3: LAUNCH & MAINTAIN */}
            <motion.div 
              variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}
-             className="bg-[#0f0f0f] border border-white/10 rounded-3xl p-8 flex flex-col h-full hover:border-[#FFC247]/30 transition-colors group"
+             className="bg-[#0f0f0f] border border-white/10 rounded-3xl p-8 flex flex-col h-full hover:border-[#ff4747]/30 transition-colors group"
            >
               {/* Visual Container */}
               <div className="bg-[#1a1a1a] rounded-xl border border-white/5 h-48 mb-8 relative overflow-hidden flex flex-col">
@@ -133,7 +133,7 @@ const Services: React.FC = () => {
                           <div className="flex items-center gap-2 text-[10px] text-neutral-500">
                               <Circle size={8} /> Security
                           </div>
-                          <div className="flex items-center gap-2 text-[10px] text-black bg-[#FFC247] px-2 py-1 rounded">
+                          <div className="flex items-center gap-2 text-[10px] text-black bg-[#ff4747] px-2 py-1 rounded">
                               <CheckCircle2 size={10} /> Efficiency
                           </div>
                           <div className="flex items-center gap-2 text-[10px] text-neutral-500">
@@ -153,7 +153,7 @@ const Services: React.FC = () => {
                           </motion.div>
                           <div className="w-full bg-neutral-800 h-1 rounded-full mt-4 overflow-hidden">
                               <motion.div 
-                                className="h-full bg-[#FFC247]"
+                                className="h-full bg-[#ff4747]"
                                 animate={{ x: ["-100%", "100%"] }}
                                 transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
                               />

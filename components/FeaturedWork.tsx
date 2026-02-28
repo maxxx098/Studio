@@ -22,13 +22,13 @@ const FeaturedWork: React.FC = () => {
              <h2 className="text-[8vw] leading-[0.8] font-black uppercase tracking-tight mb-4">
                Featured Work
              </h2>
-             <div className="w-48 h-4 text-[#FFB800] mb-8">
+             <div className="w-48 h-4 text-[#ff0000] mb-8">
                 <svg viewBox="0 0 100 10" fill="none" stroke="currentColor" strokeWidth="3">
                     <path d="M0 5 Q 10 0, 20 5 T 40 5 T 60 5 T 80 5 T 100 5" />
                 </svg>
              </div>
              <p className="text-neutral-400 text-xs md:text-sm uppercase tracking-wide font-bold max-w-xl leading-relaxed">
-               Our work <span className="text-white decoration-white underline underline-offset-4">reflects our — dedication</span> to delivering results that <span className="bg-white text-black px-1">not only meet but effective</span> results cross <span className="text-[#FFB800]">various industries.</span>
+               Our work <span className="text-white decoration-white underline underline-offset-4">reflects our — dedication</span> to delivering results that <span className="bg-white text-black px-1">not only meet but effective</span> results cross <span className="text-[#ff0000]">various industries.</span>
              </p>
           </motion.div>
           
@@ -37,7 +37,7 @@ const FeaturedWork: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-8 md:mt-0 bg-[#FFB800] text-black px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-white hover:scale-105 transition-all duration-300"
+            className="mt-8 md:mt-0 bg-[#ff0000] text-black px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-white hover:scale-105 transition-all duration-300"
           >
             View Projects
           </motion.button>
@@ -76,10 +76,10 @@ const FeaturedWork: React.FC = () => {
                 
                 <div className="py-6">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-2xl font-black uppercase tracking-tight text-white group-hover:text-[#FFB800] transition-colors duration-300">
+                    <h3 className="text-2xl font-black uppercase tracking-tight text-white group-hover:text-[#ff0000] transition-colors duration-300">
                       {project.title}
                     </h3>
-                    <div className="w-8 h-8 rounded-full border-2 border-white/20 flex items-center justify-center text-white group-hover:border-[#FFB800] group-hover:text-[#FFB800] group-hover:rotate-45 transition-all duration-300">
+                    <div className="w-8 h-8 rounded-full border-2 border-white/20 flex items-center justify-center text-white group-hover:border-[#ff0000] group-hover:text-[#ff0000] group-hover:rotate-45 transition-all duration-300">
                       <ArrowUpRight size={16} strokeWidth={2.5} />
                     </div>
                   </div>

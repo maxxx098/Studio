@@ -25,7 +25,7 @@ const Plan: React.FC = () => {
 
   return (
     <div className="text-white pt-24 relative overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="mx-auto px-6 md:px-12">
         
         {/* Main CTA */}
       <div className="mb-32 flex flex-col items-center">
@@ -45,7 +45,7 @@ const Plan: React.FC = () => {
                    whileInView={{ scale: 1, rotate: 0 }}
                    viewport={{ once: true }}
                    transition={{ type: "spring", stiffness: 200, delay: 0.5 }}
-                   className="w-16 h-16 bg-[#FFC247] rounded-full border-2 border-dashed border-black flex items-center justify-center text-3xl shadow-lg"
+                   className="w-16 h-16 bg-[#ff4747] rounded-full border-2 border-dashed border-black flex items-center justify-center text-3xl shadow-lg"
                  >
                     😍
                  </motion.div>
@@ -66,13 +66,13 @@ const Plan: React.FC = () => {
                   <div className="bg-black text-white p-4 flex justify-between items-center border-b border-white/10">
                       <span className="font-bold uppercase tracking-swiss-wide text-sm relative">
                         Premium Plan
-                        <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-[#FFC247]"></span>
+                        <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-[#ff4747]"></span>
                       </span>
                       <HelpCircle size={18} className="text-neutral-400" />
                   </div>
                   
                   {/* Card Body (Yellow) */}
-                  <div className="bg-[#FFC247] p-8 text-black">
+                  <div className="bg-[#ff4747] p-8 text-black">
                       <h3 className="text-5xl md:text-6xl font-black uppercase tracking-tighter mb-2">
                         $3500<span className="text-lg font-bold tracking-normal align-middle">/MONTH</span>
                       </h3>
@@ -106,7 +106,7 @@ const Plan: React.FC = () => {
                       {FEATURES_LEFT.map((feat, i) => (
                           <div key={i} className={`flex items-center gap-3 ${feat.included ? 'text-white' : 'text-neutral-600'}`}>
                               {feat.included ? (
-                                  <CheckCircle2 size={14} className="text-[#FFC247]" />
+                                  <CheckCircle2 size={14} className="text-[#ff4747]" />
                               ) : (
                                   <XCircle size={14} className="text-red-900" />
                               )}

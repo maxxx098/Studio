@@ -124,21 +124,11 @@ const CaseStudyDetail: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="relative h-screen"
+        className="relative py-20 mt-10"
       >
-        <div className="absolute inset-0">
-          <motion.img 
-            initial={{ scale: 1.1 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            src={project.imageUrl} 
-            alt={project.name}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#0a0a0a]" />
-        </div>
+
         
-        <div className="relative h-full container mx-auto px-6 flex flex-col justify-end pb-24">
+        <div className="relative  container mx-auto px-6 h-full flex items-center">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -207,7 +197,7 @@ const CaseStudyDetail: React.FC = () => {
       {/* Challenge Section */}
       <section className="bg-[#0a0a0a] py-24">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -228,7 +218,7 @@ const CaseStudyDetail: React.FC = () => {
       {/* Solution Section */}
       <section className="bg-neutral-900 py-24">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl ">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -271,7 +261,7 @@ const CaseStudyDetail: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="grid grid-cols-1 md:grid-cols-2 gap-6"
+              className="grid grid-cols-1"
             >
               {project.gallery.map((image, idx) => (
                 <motion.div 
@@ -280,7 +270,7 @@ const CaseStudyDetail: React.FC = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1, duration: 0.6 }}
-                  className="relative aspect-video overflow-hidden border border-white/10"
+                  className="relative "
                 >
                   <img 
                     src={image} 

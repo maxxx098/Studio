@@ -8,7 +8,7 @@
 export const ASSETS = {
   HERO: {
     // The main model in the yellow shirt
-    MODEL_MAIN: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop",
+    MODEL_MAIN: "/assets/projects/Profile.jpg",
     // The retro TV in the bottom corner
     RETRO_TV: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=2000&auto=format&fit=crop",
     // The gif inside the TV
@@ -39,6 +39,7 @@ export const ASSETS = {
     "/assets/projects/project_5.png",
     "/assets/projects/project_6.png"
   ],
+
   SERVICE_THUMBS: [
     "https://picsum.photos/seed/srv1/600/400",
     "https://picsum.photos/seed/srv2/600/400",
